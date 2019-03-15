@@ -22,7 +22,7 @@
     background: #ddd;
   }
   ul li.checked {
-    background: #888;
+    background: rgb(214, 59, 201);
     color: #fff;
     text-decoration: line-through;
   }
@@ -49,7 +49,7 @@
     color: white;
   }
   .header {
-    background-color: #f44336;
+    background-color:rgb(0, 238, 255);
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -68,11 +68,11 @@
     float: left;
     font-size: 16px;
   }
-  .addbtn {
+  .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: black;
+    color: white;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -80,6 +80,6 @@
     transition: 0.3s;
     border-radius: 0;
   }
-  .addbtn:hover {
+  .addBtn:hover {
     background-color: #bbb;
   }

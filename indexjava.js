@@ -96,11 +96,10 @@ function remove() {
       alert("Entry has been removed from your database.");
    };
 }
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("li");
+var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("span");
+  var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
@@ -120,7 +119,7 @@ for (i = 0; i < close.length; i++) {
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
+  if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
 }, false);
@@ -128,17 +127,17 @@ list.addEventListener('click', function(ev) {
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myinput").value;
+  var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myul").appendChild(li);
+    document.getElementById("myUL").appendChild(li);
   }
-  document.getElementById("myinput").value = "";
+  document.getElementById("myInput").value = "";
 
-  var span = document.createElement("span");
+  var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
@@ -151,5 +150,4 @@ function newElement() {
     }
   }
 }
- 
-initDatabase();
+initDatabase ()
